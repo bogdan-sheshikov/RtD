@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ru.omstu.rtd.Controllers.FightController">
+   <children>
+      <ImageView fx:id="background" fitHeight="400.0" fitWidth="600.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="monsterImage" fitHeight="331.0" fitWidth="297.0" layoutX="152.0" layoutY="40.0" pickOnBounds="true" preserveRatio="true" />
+      <VBox layoutX="246.0" layoutY="50.0" prefHeight="300.0" prefWidth="58.0">
+         <children>
+            <ImageView fx:id="headTarget" fitHeight="100.0" fitWidth="114.0" onMouseClicked="#headClicked" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="bodyTarget" fitHeight="100.0" fitWidth="115.0" onMouseClicked="#bodyClicked" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="legsTarget" fitHeight="103.0" fitWidth="115.0" onMouseClicked="#legsClicked" pickOnBounds="true" preserveRatio="true" />
+         </children>
+      </VBox>
+      <Label layoutX="475.0" layoutY="362.0" prefHeight="18.0" prefWidth="50.0" text="Hero HP:" />
+      <Label layoutX="533.0" layoutY="362.0" />
+      <Text fx:id="heroHpCounter" layoutX="549.0" layoutY="375.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" />
+      <HBox layoutX="14.0" layoutY="338.0" prefHeight="46.0" prefWidth="441.0">
+         <children>
+            <ImageView fx:id="slot1" fitHeight="46.0" fitWidth="44.0" onMouseClicked="#slot1Click" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="slot2" fitHeight="46.0" fitWidth="44.0" onMouseClicked="#slot2Click" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="slot3" fitHeight="46.0" fitWidth="44.0" onMouseClicked="#slot3Click" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="slot4" fitHeight="46.0" fitWidth="44.0" onMouseClicked="#slot4Click" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="slot5" fitHeight="46.0" fitWidth="44.0" onMouseClicked="#slot5Click" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="slot6" fitHeight="46.0" fitWidth="44.0" onMouseClicked="#slot6Click" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fitHeight="46.0" fitWidth="44.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fitHeight="46.0" fitWidth="44.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fitHeight="46.0" fitWidth="44.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fitHeight="46.0" fitWidth="44.0" pickOnBounds="true" preserveRatio="true" />
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>
